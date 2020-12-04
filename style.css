@@ -27,3 +27,16 @@ text-align : center;
     font-family: 'Acme', sans-serif;
 }
 
+.search-form-input{
+    margin-top: 10% ;
+    width: 60%;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+}
+
+.search-form-button{
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
