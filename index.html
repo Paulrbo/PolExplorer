@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        PolExplorer
+        </title>
+        <meta charset="utf-8">
+        <title data-i18n="new_tab_title"></title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <script type="text/javascript" src="js/newtab.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=JetBrains+Mono:ital,wght@1,800&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+
+
+        <img id="pol"src="polex.png"></img>
+ 
+
+        <form id="searchForm" placeholder="Rechercher" action="https://www.google.com/search" method="GET">
+                
+            <div class="search-form-wrapper">
+                
+                    <input class="search-form-input" type="search" name="q" data-i18n="searchinput_placeholder" data-i18n-target="placeholder" value="" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" />
+
+                   
+                    <button class="search-form-button search-form-submit" type="submit">
+                        <svg focusable="false"  class="icon-search" viewBox="0 0 27.23 27.58" width="18" height="18">
+                            <line x1="16.84" y1="17.19" x2="25.81" y2="26.17" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4"/>
+                            <path d="M567.8,1679.13A7.84,7.84,0,1,1,560,1687a7.85,7.85,0,0,1,7.84-7.84m0-3A10.84,10.84,0,1,0,578.64,1687a10.84,10.84,0,0,0-10.84-10.84h0Z" transform="translate(-556.96 -1676.13)" fill="#000"/>
+                        </svg>
+                    </button>
+            </div>
+        </form>
+
+        <span id="message">
+            <i data-feather="alert-triangle"></i>
+            Touche majuscule activée
+        </span>
+        
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>feather.replace()</script>
+
+        <script type="text/javascript">
+            const capsMessage = document.querySelector('#message');
+        
+        window.addEventListener('keyup', event => {
+            if (event.getModifierState('CapsLock')) {
+                capsMessage.style.display = 'flex';
+            } else {
+                capsMessage.style.display = 'none';
+            }
+        });
+              </script>
+
+
+    <p id="txt">Faite vos recherches sur le super moteur de recherche de PolExplorer</p>
+
+</body>
+
+</html>
