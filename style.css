@@ -10,7 +10,7 @@
 
         
 body {
-    background-color:#c0c0c0;
+    background-color:#010044;
     text-align : center;
     color: white;
     font-family: 'Expletus Sans', cursive;
@@ -29,19 +29,19 @@ h1{
 .search-form-input{
     margin-bottom: 2%;
     width: 60%;
-    -webkit-border-radius: 40px;
+    /*-webkit-border-radius: 40px;
     -moz-border-radius: 40px;
-    border-radius: 40px;
+    border-radius: 40px;*/
 }
 
 .search-form-button{
-    -webkit-border-radius: 50px;
+    /*-webkit-border-radius: 50px;
     -moz-border-radius: 50px;
-    border-radius: 50px;
+    border-radius: 50px;*/
 }
 
 .menu{
-    padding: 1%;
+    padding: 1px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     border: solid 3px #c5c5c5;
