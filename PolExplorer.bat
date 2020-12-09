@@ -1,1 +1,1 @@
-start https://paulrbo.github.io/PolExplorer/
+start index.html
